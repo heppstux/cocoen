@@ -37,6 +37,7 @@ class Cocoen {
 
     window.addEventListener('mouseup', this.onDragEnd.bind(this));
     window.addEventListener('resize', this.dimensions.bind(this));
+    this.element.addEventListener('cocoen.update', this.dimensions.bind(this));
   }
 
   dimensions() {
